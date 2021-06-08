@@ -1,8 +1,5 @@
 /* See LICENSE file for copyright and license details. */
 
-/* Imports */
-#include <X11/XF86keysym.h>
-
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
@@ -61,9 +58,6 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *brightness_up[] = { "/home/greg/bin/br_up.sh", NULL};
-static const char *brightness_dwn[] = { "/home/greg/bin/br_dwn.sh", NULL};
-
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
